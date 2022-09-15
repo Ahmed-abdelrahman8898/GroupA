@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="56.142">
+    <testcase classname="Registration" name="Registration with email" time="22.137">
+        <failure message="expected:&lt;[Ungültige E-Mail-Adresse oder Mobiltelefonnummer Korrigieren Sie das Problem, und wiederholen Sie den Vorgang.]&gt; but was:&lt;[this is error]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given the user navigate to the registration page............................passed
+When the user type wrong email and click submit.............................passed
+Then the error msg appear "this is error"...................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Ungültige E-Mail-Adresse oder Mobiltelefonnummer Korrigieren Sie das Problem, und wiederholen Sie den Vorgang.]> but was:<[this is error]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at StepDefinitions.Steps.the_error_msg_appear(Steps.java:79)
+	at ✽.the error msg appear "this is error"(file:///C:/Users/Ahmed%20Alwany/eclipse-workspace/GroupA/src/test/java/features/feature1.feature:11)
+]]></failure>
+    </testcase>
+    <testcase classname="Registration" name="Registration with email second" time="16.564">
+        <system-out><![CDATA[Given the user navigate to the registration page............................passed
+When the user type  username "summer" type password "correctpassword1" and  click submit.passed
+Then this error msg "erros msg : wrong user1" appear........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Registration" name="Registration with email second 2" time="17.073">
+        <system-out><![CDATA[Given the user navigate to the registration page............................passed
+When the user type  username "yasmin" type password "wrong password2" and  click submit.passed
+Then this error msg "erros msg : wrong password2" appear....................passed
+]]></system-out>
+    </testcase>
+</testsuite>
